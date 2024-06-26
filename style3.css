@@ -1,0 +1,45 @@
+
+/* Custom styles for the pricing example */
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.card-deck .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.card-body .btn {
+    margin-top: 0.75rem;
+}
+
+.card-body ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer img {
+    margin-bottom: 1.5rem;
+}
+
+footer .col-6 {
+    margin-bottom: 1.5rem;
+}

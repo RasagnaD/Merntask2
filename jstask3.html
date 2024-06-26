@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        Performing arithmetic operation with ng-app directive
+    </title>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+</head>
+ 
+<body ng-app="myApp" ng-controller="myCtrl">
+    <form>
+        <label>1st Number: </label>
+        <input type="number" min="0" ng-model="number1">
+        <br>
+        <label>2nd Number:</label>
+        <input type="number" min="0" ng-model="number2">
+        <br><br>
+        <button type="button"
+                ng-click="multiply(number1,number2)">
+                Multiply
+        </button>
+        <button type="button"
+                ng-click="divide(number1,number2)">
+                Divide
+         </button>
+    </form>
+     
+<p>Output:
+        <input type="text"
+               value="{{answer}}"
+               ng-disabled="true">
+    </p>
+ 
+ 
+    <script type="text/javascript">
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope) {
+            $scope.answer = "";
+            $scope.multiply = function(n1, n2) {
+                $scope.answer = n1 * n2;
+            };
+            $scope.divide = function(n1, n2) {
+                $scope.answer = n1 / n2;
+            };
+        })
+    </script>
+</body>
+</html>
